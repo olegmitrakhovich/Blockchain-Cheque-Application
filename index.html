@@ -1,0 +1,81 @@
+<html lang="en">
+
+ <head>
+
+  <title>SURGE ERP Blockchain Payment(Proof Of Concept)</title>
+
+  <meta charset="UTF-8" />
+
+  <link   href='normalize.css' rel='stylesheet'  type='text/css' />
+
+  <link   href='payment.css' rel='stylesheet'  type='text/css' />
+
+  <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.34/dist/web3.min.js"></script> 
+  <script src="validation.js"></script>
+  
+
+ </head>
+
+ <body>
+
+<form method="post" name="form8" onsubmit="return signPayment();">
+
+<div class="mainbox">
+<p></p>
+<p></p>
+<p class= "type5"> Your Personal Blockchain Cheque Book </p>
+                      
+        
+<fieldset>
+
+             
+                    
+<p>
+Recipient
+<br /><input type="text" name="Recipient" id="Recipient" placeholder="Wallet address of the person Cheque Issued to" title="Recipient"/> 
+
+<br />  
+Amount
+<br /> <input type="text" name="Amount" id="Amount" placeholder="Amount to be withdrawn" /> 
+<br />
+Nonce
+<br /><input type="text" name="Nonce" id="Nonce" maxlength="10" title="Nonce" placeholder="What number is this cheque?"/> 
+<br />
+Contract Address <br /><input type="text" id="ContractAddress" name="ContractAddress" placeholder="Address of the contract to withdraw from"/>
+</p>
+</fieldset> 
+    
+<hr> 
+
+     <br>
+  
+     <center><input type="submit" value="Sign Cheque" /></center>
+
+     <br>
+
+     <br>   
+    
+<div class="divider">&nbsp;</div>
+
+
+
+</div>
+
+
+    </form>
+
+        <footer>
+
+  <br />
+
+
+  <br />
+
+   
+        </footer>
+   
+
+</body>
+
+</html>

@@ -1,0 +1,287 @@
+.mainbox{display:table; background-color: #F0FFFF; border: 1px solid; width: 350px;  height: 325px; margin-left: auto; margin-right:auto;}
+
+
+div.container4 {
+    height: 10em;
+    position: relative; 
+	background-color: black;
+	}
+div.container4 p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+
+div.container5 {
+    height: 5em;
+    position: relative; 
+	background-color: black;
+	}
+div.container5 p {
+    margin: 0;
+    font-size: 16px;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+
+#error{
+	text-align: left;
+	color: #FF0000;
+	font-family: monospace;	
+}
+
+#Recipient{
+	width: 100%;
+	color: black;
+}
+
+#Amount{
+	width: 100%;
+	color: black;
+}
+
+#Nonce{
+	width: 100%;
+	color: black;
+}
+
+#ContractAddress{
+	width: 100%;
+	color: black;
+}
+
+#province{
+	width:10%;
+	color: black;
+}
+
+#postalcode{
+	width:20%;
+	color: black;
+}
+
+#phone{
+	color:black;
+}
+
+#email{
+	color:black;
+}
+
+#language{
+	color:black;
+}
+
+a{
+	 text-decoration: underline;
+	 color: white;
+         margin-left: 10px;
+	 margin-right: 10px;
+     }
+
+input.button {
+    background-color: #32CD32;
+    color: white;
+    padding: 5px 10px;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer; 
+    border-style: double;
+    border-width: 3px;	 
+    border-color: black;
+    margin-left: 80px;
+    margin-top: 5px;		  	
+}
+
+figure{
+	float: left;
+	margin: 0 0 10px 10px;
+}	
+
+body {
+  line-height: 1.0;
+}
+
+.divider{
+	height:1px;
+}
+
+footer {
+background-color: black;
+bottom: 0px;
+text-align: center;
+color: white;
+width: 351px;
+margin-left: auto;
+margin-right: auto;
+}
+    
+
+input[type=submit] {
+    padding:3px; 
+    background: blue;
+    color: #F0FFFF; 	 
+    border: 28px;
+    border: black;
+    border-style: solid;
+    border-width: 1px;	
+    cursor:pointer; 
+    margin-left: 15px;
+    margin-right: 5px;
+   		
+	
+}
+
+input[type=reset] {
+    padding:5px;
+    background: blue;
+    color: #F0FFFF;
+    border: 28px;
+    border: black;
+    cursor:pointer;
+    margin-left: 45px;
+    margin-right: 20px;
+    border-style: solid;
+    border-width: 1px;	
+
+
+}
+ 
+
+IMG.center {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 50px;
+	padding-right: 30px;
+    	padding-bottom: 50px;
+    	padding-left: 30px;
+}
+
+textarea {
+    resize: none;
+}
+
+p{
+	font-size: 90%;
+	color: blue;
+}
+
+p.type1{
+	text-align: center;
+	text-decoration: underline;
+}
+
+p.type2{
+	text-align: center;
+	color: #3498db;
+	text-shadow: 2px 2px grey;
+	font-size: 20px;
+	line-height: 0.5;
+}
+
+p.type3{
+	text-align: center;
+}
+
+p.type4 {
+	text-align: center;
+	color: blue;
+	font-size:15px;
+	font-weight: bold;
+}
+
+p.type5{
+	text-align: center;
+	color: blue;
+	font-size: 10px;
+	
+}
+
+p.type6{
+	text-align:center;
+	font-size: 10px;
+	color:blue;
+}
+
+p.type7{
+	font-weight:bold;
+	font-size: 15px;
+}
+
+hr {
+	height: 3px;
+	background-color: blue;
+	border: 0;
+}
+
+.box1{
+	display:table-cell;
+	width:  100%;
+	height: 100%;
+}
+
+.box2{
+	display:table-cell;
+	width:  35%;
+	border:1px solid;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.box3{
+	display:table-cell;
+	width:  40%;
+	border: 1px solid;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+table{
+	border: 3px solid black;
+	text-align: center;	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+td {
+	border: 1px solid black;
+	text-align: center;
+	padding: 5px;
+}
+
+th {
+	 border: 1px solid black;
+         text-align: center;
+	 padding: 5px;
+
+}
+
+
+fieldset { 
+		border:2px outset blue; 
+    	text-align: left;
+	    padding-top: 2px;
+    	padding-right: 10px;
+    	padding-bottom: 10px;
+    	padding-left: 10px;
+	}
+
+      legend{    
+		 border: 4px groove #ff0000;
+                 background-color: #99ff99; 
+                 color: white;
+                 font-size: 16px;
+                 font-weight: bold;
+                 padding: 3px; 
+                 text-shadow:0.1em 0.2em 0.09em #333; 
+}
