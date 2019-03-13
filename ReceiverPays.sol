@@ -1,6 +1,6 @@
 pragma solidity ^0.4.20;
 
-contract ReceiverPays {
+contract ReceiverPay {
     address owner = msg.sender;
 
     mapping(uint256 => bool) usedNonces;
