@@ -1,60 +1,63 @@
-<html lang="en">
+<meta charset="UTF-8" />
 
- <head>
+<head>
 
-  <title>SURGE ERP Blockchain Payment(Proof Of Concept)</title>
-
-  <meta charset="UTF-8" />
-
+ 
+ <script src ="https://cdn.jsdelivr.net/npm/web3-utils@1.0.0-beta.46/dist/web3-utils.umd.min.js"></script>
+ <script src ="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.34/dist/web3.min.js"></script>
+ 
+  <!----
+  <script src ="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.34/dist/web3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.34/dist/web3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script> 
+   <script src="https://rawgit.com/ethereumjs/browser-builds/master/dist/ethereumjs-abi/ethereumjs-abi-0.6.5.js"></script>
+   <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script> 
+  -->
   <link   href='normalize.css' rel='stylesheet'  type='text/css' />
-
-  <link   href='payment.css' rel='stylesheet'  type='text/css' />
-
-  <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.34/dist/web3.min.js"></script> 
-  <script src="validation.js"></script>
-  
+  <link   href='app.css' rel='stylesheet'  type='text/css' /> 
+  <script src='app.js' type='text/javascript'> </script>
 
  </head>
 
  <body>
-
-<form method="post" name="form8" onsubmit="return signPayment();">
+<div class='centerThis'>
+<form method="post" name="form8" onsubmit="return formValidation();">
 
 <div class="mainbox">
 <p></p>
 <p></p>
-<p class= "type5"> Your Personal Blockchain Cheque Book </p>
-                      
-        
+<p class= "type5">SURGE BLOCKCHAIN PAY CHEQUE APPLICATION</p>
+            			  
 <fieldset>
 
              
                     
 <p>
-Recipient
-<br /><input type="text" name="Recipient" id="Recipient" placeholder="Wallet address of the person Cheque Issued to" title="Recipient"/> 
+              RECIPIENT<br /><input type="text" name="RECIPIENT" id="RECIPIENT" placeholder="Wallet Address of the person who will be withdrawing funds" title="RECIPIENT"/> 
+                      <br />  
+		      AMOUNT<br /> <input type="text" name="AMOUNT" id="AMOUNT" placeholder="Amount to be withdrawn" /> 
+					  <br />
+		      NONCE<br /><input type="text" name="NONCE" id="NONCE" maxlength="10" title="NONCE" placeholder="What Number is this cheque"/> 	
+					  <br />
+			  CONTRACT ADDRESS <br /><input type="text" id="CONTRACTADDRESS" name="CONTRACTADDRESS" placeholder="Contract address where the funds will be withdrawn from"/>
 
-<br />  
-Amount
-<br /> <input type="text" name="Amount" id="Amount" placeholder="Amount to be withdrawn" /> 
-<br />
-Nonce
-<br /><input type="text" name="Nonce" id="Nonce" maxlength="10" title="Nonce" placeholder="What number is this cheque?"/> 
-<br />
-Contract Address <br /><input type="text" id="ContractAddress" name="ContractAddress" placeholder="Address of the contract to withdraw from"/>
+			  PRIVATE KEY <br /><input type="text" id="PRIVATEKEY" name="PRIVATEKEY" placeholder="Your Private Key"/>
 </p>
-</fieldset> 
-    
+                    
+
+                  </fieldset> 
+
+			<br>	                            	
+
 <hr> 
 
      <br>
-  
+	
      <center><input type="submit" value="Sign Cheque" /></center>
 
      <br>
 
-     <br>   
+     <br>		
     
 <div class="divider">&nbsp;</div>
 
@@ -64,18 +67,7 @@ Contract Address <br /><input type="text" id="ContractAddress" name="ContractAdd
 
 
     </form>
-
-        <footer>
-
-  <br />
-
-
-  <br />
-
-   
-        </footer>
-   
-
+</div>
 </body>
 
 </html>

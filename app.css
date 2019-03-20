@@ -1,4 +1,12 @@
-.mainbox{display:table; background-color: #F0FFFF; border: 1px solid; width: 350px;  height: 325px; margin-left: auto; margin-right:auto;}
+
+body{display:flex;}
+
+.centerThis {
+	justify-content: center;;
+	align-items: center;
+}
+
+.mainbox{display:table; background-color: #F0FFFF; border: 1px solid; width: 350px;  height: 325px; justify-content: center; align-items: center;}
 
 
 div.container4 {
@@ -36,23 +44,28 @@ div.container5 p {
 	font-family: monospace;	
 }
 
-#Recipient{
+#RECIPIENT{
 	width: 100%;
 	color: black;
 }
 
-#Amount{
+#AMOUNT{
 	width: 100%;
 	color: black;
 }
 
-#Nonce{
+#NONCE{
 	width: 100%;
 	color: black;
 }
 
-#ContractAddress{
+#CONTRACTADDRESS{
 	width: 100%;
+	color: black;
+}
+
+#PRIVATEKEY {
+	width:100%;
 	color: black;
 }
 
@@ -66,17 +79,9 @@ div.container5 p {
 	color: black;
 }
 
-#phone{
-	color:black;
-}
 
-#email{
-	color:black;
-}
 
-#language{
-	color:black;
-}
+
 
 a{
 	 text-decoration: underline;
@@ -285,3 +290,5 @@ fieldset {
                  padding: 3px; 
                  text-shadow:0.1em 0.2em 0.09em #333; 
 }
+
+   
